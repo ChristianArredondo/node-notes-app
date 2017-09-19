@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ChristianArredondo/node-notes-app/issues"
   },
-  "homepage": "https://github.com/ChristianArredondo/node-notes-app#readme"
+  "homepage": "https://github.com/ChristianArredondo/node-notes-app#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
