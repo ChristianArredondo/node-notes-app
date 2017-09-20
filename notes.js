@@ -65,7 +65,7 @@ const logNote = (note) => {
 
 
 module.exports = {
-  addNote,
+  addNote, 
   getAll,
   logNote,
   readNote,
