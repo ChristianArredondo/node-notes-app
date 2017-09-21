@@ -26,7 +26,7 @@ const addNote = (title, body) => {
 
   if (!duplicates.length) {
     notes.push(note);
-    saveNotes(notes);
+    saveNotes(notes); 
     return note;
   }
 
@@ -52,6 +52,7 @@ const removeNote = (title) => {
 };
 
 const logNote = (note) => {
+  debugger;
   console.log(
     `
     Note found:
