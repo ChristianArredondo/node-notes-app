@@ -1,5 +1,3 @@
-console.log('Starting app.js');
-
 const fs = require('fs');
 const _ = require('lodash');
 const yargs = require('yargs');
@@ -19,7 +17,9 @@ if (command === 'add') {
     console.log('Note title is already in use.')
   }
 } else if (command === 'list') {
-  notes.getAll();
+  const allNotes = notes.getAll();
+  console.log(`Printing ${allNotes.length} note(s).`)
+  allNotes.forEach((note) => notes.logNote(note));
 } else if (command === 'read') {
   const noteRead = notes.readNote(argv.title);
   if (noteRead) {
